@@ -1,0 +1,19 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hue: 223;
+    --white: hsl(var(--hue), 10%, 100%);
+    font-size: calc(16px + 8 * (100vw - 320px) / 960);
+}
+
+body,
+input {
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+}
