@@ -8,6 +8,8 @@
 :root {
     --hue: 223;
     --white: hsl(var(--hue), 10%, 100%);
+    --gray9: hsl(var(--hue), 10%, 10%);
+    --trans-dur: 0.3s;
     font-size: calc(16px + 8 * (100vw - 320px) / 960);
 }
 
@@ -16,4 +18,21 @@ input {
     font-size: 1em;
     line-height: 1.5;
     font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--gray9);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: background-color var(--trans-dur),
+    color var(--trans-dur);
+}
+
+/* Main styles */
+.fr {
+    animation: fade-slide-in 0.6s ease-out;
+    padding: 0 1.5em;
+    max-width: 20em;
 }
